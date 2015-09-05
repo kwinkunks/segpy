@@ -32,8 +32,8 @@ def local_file(name):
 
 
 # Get the long description from the relevant file
-with open(local_file('DESCRIPTION.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+#with open(local_file('DESCRIPTION.rst'), encoding='utf-8') as f:
+#    long_description = f.read()
 
 setup(
     name='segpy_numpy',
@@ -44,7 +44,7 @@ setup(
     version=find_version("segpy_numpy/__init__.py"),
 
     description='Interoperability between Numpy with Segpy.',
-    long_description=long_description,
+    #long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com/sixty-north/segpy',

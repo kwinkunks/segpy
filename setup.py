@@ -26,8 +26,8 @@ def find_version(*file_paths):
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
-with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+#with open('DESCRIPTION.rst', 'r') as f:
+#    long_description = f.read()
 
 setup(
     name='segpy',
@@ -38,7 +38,7 @@ setup(
     version=find_version("segpy/__init__.py"),
 
     description='Transfer of seismic data to and from SEG Y files',
-    long_description=long_description,
+    #long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com/sixty-north/segpy',
